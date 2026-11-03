@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskManager Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <header class="header">
+            <div class="logo">✓</div>
+            <h1>TaskManager Web</h1>
+            <p>Organiza tus actividades y alcanza tus objetivos.</p>
+        </header>
+
+        <section class="task-section">
+
+            <h2>Mis tareas</h2>
+            <p class="subtitle">Administra tus actividades pendientes.</p>
+
+            <form id="taskForm">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="¿Qué necesitas hacer?"
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit" id="addButton">
+                    + Agregar tarea
+                </button>
+            </form>
+
+            <div class="statistics">
+                <div class="stat-card">
+                    <span id="totalTasks">0</span>
+                    <p>Total</p>
+                </div>
+
+                <div class="stat-card">
+                    <span id="pendingTasks">0</span>
+                    <p>Pendientes</p>
+                </div>
+
+                <div class="stat-card">
+                    <span id="completedTasks">0</span>
+                    <p>Completadas</p>
+                </div>
+            </div>
+
+            <div class="list-header">
+                <h3>Lista de actividades</h3>
+            </div>
+
+            <ul id="taskList">
+                <!-- Las tareas aparecerán aquí -->
+            </ul>
+
+            <p id="emptyMessage" class="empty-message">
+                No tienes tareas todavía. ¡Agrega una!
+            </p>
+
+        </section>
+
+        <footer>
+            <p>TaskManager Web © 2026 | Proyecto académico</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
