@@ -23,19 +23,25 @@
             <p class="subtitle">Administra tus actividades pendientes.</p>
 
             <form id="taskForm">
-                <input
-                    type="text"
-                    id="taskInput"
-                    placeholder="¿Qué necesitas hacer?"
-                    autocomplete="off"
-                    required
-                >
+             <label for="taskInput" class="visually-hidden">
+                Nombre de la tarea
+            </label>
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="¿Qué necesitas hacer?"
+                autocomplete="off"
+                aria-label="Nombre de la tarea"
+                maxlength="100"
+                required
+            >
                 <button type="submit" id="addButton">
                     + Agregar tarea
                 </button>
             </form>
 
-            <div class="statistics">
+           <div class="statistics" aria-label="Estadísticas de tareas">
                 <div class="stat-card">
                     <span id="totalTasks">0</span>
                     <p>Total</p>
@@ -56,7 +62,7 @@
                 <h3>Lista de actividades</h3>
             </div>
 
-            <ul id="taskList">
+            <ul id="taskList" aria-label="Lista de tareas">
                 <!-- Las tareas aparecerán aquí -->
             </ul>
 

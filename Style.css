@@ -139,6 +139,11 @@ body {
     border: 1px solid #ececf2;
     border-radius: 10px;
     margin-bottom: 10px;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.task-item:hover {
+    background: #fafaff;
 }
 
 .task-content {
@@ -177,6 +182,21 @@ body {
     background: #ffdddd;
 }
 
+#addButton,
+.delete-button {
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#addButton:active,
+.delete-button:active {
+    transform: scale(0.97);
+}
+
+button:focus-visible {
+    outline: 2px solid #6258d9;
+    outline-offset: 3px;
+}
+
 .empty-message {
     text-align: center;
     color: #999eac;
@@ -190,6 +210,20 @@ footer {
     margin-top: 25px;
 }
 
+/* Etiquetas accesibles sin alterar el diseño */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Ajustes para dispositivos móviles */
 @media (max-width: 550px) {
     body {
         padding: 20px 12px;
@@ -222,73 +256,7 @@ footer {
     .stat-card span {
         font-size: 21px;
     }
-}
-.task-item {
-    transition: background 0.2s ease, transform 0.2s ease;
-}
 
-.task-item:hover {
-    background: #fafaff;
-}
-
-#addButton,
-.delete-button {
-    transition: background 0.2s ease, transform 0.2s ease;
-}
-
-#addButton:active,
-.delete-button:active {
-    transform: scale(0.97);
-}
-
-button:focus-visible {
-    outline: 2px solid #6258d9;
-    outline-offset: 3px;
-}
-@media (max-width: 550px) {
-    .task-item {
-        align-items: flex-start;
-    }
-
-    .delete-button {
-        flex-shrink: 0;
-    }
-}
-/* Mejoras visuales de interacción */
-.task-item {
-    transition: background 0.2s ease, transform 0.2s ease;
-}
-
-.task-item:hover {
-    background: #fafaff;
-}
-
-#addButton,
-.delete-button {
-    transition: background 0.2s ease, transform 0.2s ease;
-}
-
-#addButton:active,
-.delete-button:active {
-    transform: scale(0.97);
-}
-
-button:focus-visible {
-    outline: 2px solid #6258d9;
-    outline-offset: 3px;
-}
-/* Ajustes adicionales para dispositivos móviles */
-@media (max-width: 550px) {
-    .task-item {
-        align-items: flex-start;
-    }
-
-    .delete-button {
-        flex-shrink: 0;
-    }
-}
-/* Ajustes para dispositivos móviles */
-@media (max-width: 550px) {
     .task-item {
         align-items: flex-start;
     }
