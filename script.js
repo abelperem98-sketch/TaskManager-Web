@@ -9,7 +9,9 @@ const completedTasks = document.getElementById("completedTasks");
 const emptyMessage = document.getElementById("emptyMessage");
 
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-let nextId = 1;
+let nextId = tasks.length > 0
+    ? Math.max(...tasks.map(task => task.id)) + 1
+    : 1;
 
 // Agregar una nueva tarea
 taskForm.addEventListener("submit", function(event) {
