@@ -8,7 +8,7 @@ const pendingTasks = document.getElementById("pendingTasks");
 const completedTasks = document.getElementById("completedTasks");
 const emptyMessage = document.getElementById("emptyMessage");
 
-let tasks = [];
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 let nextId = 1;
 
 // Agregar una nueva tarea
@@ -120,7 +120,9 @@ function updateStatistics() {
     completedTasks.textContent = completed;
 
     emptyMessage.style.display = total === 0 ? "block" : "none";
-}
 
+    // Guardar tareas en el navegador
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+}
 // Mostrar estado inicial
 renderTasks();
