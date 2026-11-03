@@ -223,3 +223,77 @@ footer {
         font-size: 21px;
     }
 }
+.task-item {
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.task-item:hover {
+    background: #fafaff;
+}
+
+#addButton,
+.delete-button {
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#addButton:active,
+.delete-button:active {
+    transform: scale(0.97);
+}
+
+button:focus-visible {
+    outline: 2px solid #6258d9;
+    outline-offset: 3px;
+}
+@media (max-width: 550px) {
+    .task-item {
+        align-items: flex-start;
+    }
+
+    .delete-button {
+        flex-shrink: 0;
+    }
+}
+/* Mejoras visuales de interacción */
+.task-item {
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.task-item:hover {
+    background: #fafaff;
+}
+
+#addButton,
+.delete-button {
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#addButton:active,
+.delete-button:active {
+    transform: scale(0.97);
+}
+
+button:focus-visible {
+    outline: 2px solid #6258d9;
+    outline-offset: 3px;
+}
+/* Ajustes adicionales para dispositivos móviles */
+@media (max-width: 550px) {
+    .task-item {
+        align-items: flex-start;
+    }
+
+    .delete-button {
+        flex-shrink: 0;
+    }
+}
+/* Ajustes para dispositivos móviles */
+@media (max-width: 550px) {
+    .task-item {
+        align-items: flex-start;
+    }
+
+    .delete-button {
+        flex-shrink: 0;
+    }
+}
