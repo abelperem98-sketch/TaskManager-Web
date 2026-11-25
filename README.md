@@ -41,8 +41,9 @@ Se utilizaron las siguientes ramas:
 
 Las modificaciones se registraron mediante commits y se prepararon para integrarse a la rama principal mediante Pull Requests.
 
-## Integrante
+## Integrantes
 Diego Abel Perez Montes
+
 Jesus Raul Valdez Benitez
 
 ## Tipo de proyecto
