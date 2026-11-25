@@ -43,6 +43,7 @@ Las modificaciones se registraron mediante commits y se prepararon para integrar
 
 ## Integrante
 Diego Abel Perez Montes
+Jesus Raul Valdez Benitez
 
 ## Tipo de proyecto
 Proyecto académico.
